@@ -4,7 +4,7 @@ from django.db import models
 class Player(models.Model):
     """
     This model will create a table with args: first name,lastname,heigth inches,height in meters
-    will return by default only the height in inches
+    will return by default only the name of player
     """
     first_name = models.CharField(max_length=30,null=False)
     last_name = models.CharField(max_length=20,null=False)
