@@ -14,7 +14,7 @@ This repo contains a web application that obtains the heights in inches of the N
     pip install -r requirements.txt
     ```
 
-- Setup local MySql database and use django migrations 
+- Setup local PostgreSQL database and use django migrations 
 
     ```sh
     python NBA/manage.py makemigrations
