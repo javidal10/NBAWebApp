@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Api/home.css' %}">
     <title>NBA Players Height Display</title>
 </head>
 <body>
-    <form method="GET" action="list">
-        <input type="text" name="height_sum" value="{{int}}">
-        <input type="submit">
+    <h1>WELCOME!</h1>
+    <H3>Here you can find Two NBA players that matches your input height in inches!</H3>
+    <form method="GET" action="list" id="user_input">
+        <input type="text" name="height_sum" value="{{int}}" id="text_inp" placeholder="Enter players summatory desired Height!">
+        <input type="submit" value="Find">
     </form>
 </body>
 </html>

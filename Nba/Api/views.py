@@ -78,7 +78,8 @@ def targetHeight(request):
                 h-=1
 
         if arr == []:
-            return str("No Matches Found")
+            arr.append('NO MATCHES FOUND')
+            return arr
 
         return arr
 
